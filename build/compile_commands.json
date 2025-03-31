@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/alex/workspaceC/webserver-ng/build/src",
+  "command": "/usr/bin/c++   -I/home/alex/workspaceC/webserver-ng/include  -g   -std=gnu++11 -o CMakeFiles/main.dir/main.cpp.o -c /home/alex/workspaceC/webserver-ng/src/main.cpp",
+  "file": "/home/alex/workspaceC/webserver-ng/src/main.cpp"
+}
+]

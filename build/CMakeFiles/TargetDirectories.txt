@@ -1,0 +1,5 @@
+/home/alex/workspaceC/webserver-ng/build/CMakeFiles/rebuild_cache.dir
+/home/alex/workspaceC/webserver-ng/build/CMakeFiles/edit_cache.dir
+/home/alex/workspaceC/webserver-ng/build/src/CMakeFiles/rebuild_cache.dir
+/home/alex/workspaceC/webserver-ng/build/src/CMakeFiles/edit_cache.dir
+/home/alex/workspaceC/webserver-ng/build/src/CMakeFiles/main.dir
