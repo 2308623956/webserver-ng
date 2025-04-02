@@ -111,17 +111,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named test
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
+test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test
+.PHONY : test
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
-.PHONY : main/fast
+test/fast:
+	$(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/build
+.PHONY : test/fast
+
+#=============================================================================
+# Target rules for targets named log_lib
+
+# Build rule for target.
+log_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 log_lib
+.PHONY : log_lib
+
+# fast build rule for target.
+log_lib/fast:
+	$(MAKE) -f log/CMakeFiles/log_lib.dir/build.make log/CMakeFiles/log_lib.dir/build
+.PHONY : log_lib/fast
+
+#=============================================================================
+# Target rules for targets named util_lib
+
+# Build rule for target.
+util_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 util_lib
+.PHONY : util_lib
+
+# fast build rule for target.
+util_lib/fast:
+	$(MAKE) -f util/CMakeFiles/util_lib.dir/build.make util/CMakeFiles/util_lib.dir/build
+.PHONY : util_lib/fast
 
 # Help Target
 help:
@@ -131,7 +157,9 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... main"
+	@echo "... test"
+	@echo "... log_lib"
+	@echo "... util_lib"
 .PHONY : help
 
 

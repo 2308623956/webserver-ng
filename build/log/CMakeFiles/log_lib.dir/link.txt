@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,liblog_lib.so -o ../../lib/liblog_lib.so CMakeFiles/log_lib.dir/AsyncLogging.cpp.o CMakeFiles/log_lib.dir/LogFile.cpp.o CMakeFiles/log_lib.dir/LogStream.cpp.o CMakeFiles/log_lib.dir/Logger.cpp.o 

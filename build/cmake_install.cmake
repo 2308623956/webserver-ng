@@ -39,7 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/alex/workspaceC/webserver-ng/build/src/cmake_install.cmake")
+  include("/home/alex/workspaceC/webserver-ng/build/test/cmake_install.cmake")
+  include("/home/alex/workspaceC/webserver-ng/build/log/cmake_install.cmake")
+  include("/home/alex/workspaceC/webserver-ng/build/util/cmake_install.cmake")
 
 endif()
 
