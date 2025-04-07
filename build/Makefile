@@ -149,6 +149,19 @@ util_lib/fast:
 	$(MAKE) -f util/CMakeFiles/util_lib.dir/build.make util/CMakeFiles/util_lib.dir/build
 .PHONY : util_lib/fast
 
+#=============================================================================
+# Target rules for targets named threadpool_lib
+
+# Build rule for target.
+threadpool_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 threadpool_lib
+.PHONY : threadpool_lib
+
+# fast build rule for target.
+threadpool_lib/fast:
+	$(MAKE) -f pool/CMakeFiles/threadpool_lib.dir/build.make pool/CMakeFiles/threadpool_lib.dir/build
+.PHONY : threadpool_lib/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -160,6 +173,7 @@ help:
 	@echo "... test"
 	@echo "... log_lib"
 	@echo "... util_lib"
+	@echo "... threadpool_lib"
 .PHONY : help
 
 

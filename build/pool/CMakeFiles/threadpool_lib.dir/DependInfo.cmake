@@ -4,9 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/alex/workspaceC/webserver-ng/test/test.cpp" "/home/alex/workspaceC/webserver-ng/build/test/CMakeFiles/test.dir/test.cpp.o"
+  "/home/alex/workspaceC/webserver-ng/pool/EventLoopThread.cpp" "/home/alex/workspaceC/webserver-ng/build/pool/CMakeFiles/threadpool_lib.dir/EventLoopThread.cpp.o"
+  "/home/alex/workspaceC/webserver-ng/pool/EventLoopThreadPool.cpp" "/home/alex/workspaceC/webserver-ng/build/pool/CMakeFiles/threadpool_lib.dir/EventLoopThreadPool.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "threadpool_lib_EXPORTS"
+  )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
@@ -15,9 +21,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/alex/workspaceC/webserver-ng/build/util/CMakeFiles/util_lib.dir/DependInfo.cmake"
-  "/home/alex/workspaceC/webserver-ng/build/log/CMakeFiles/log_lib.dir/DependInfo.cmake"
-  "/home/alex/workspaceC/webserver-ng/build/pool/CMakeFiles/threadpool_lib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

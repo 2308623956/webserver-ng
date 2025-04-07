@@ -81,6 +81,7 @@ test_EXTERNAL_OBJECTS =
 ../bin/test: test/CMakeFiles/test.dir/build.make
 ../bin/test: ../lib/libutil_lib.so
 ../bin/test: ../lib/liblog_lib.so
+../bin/test: ../lib/libthreadpool_lib.so
 ../bin/test: test/CMakeFiles/test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alex/workspaceC/webserver-ng/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/test"
 	cd /home/alex/workspaceC/webserver-ng/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)

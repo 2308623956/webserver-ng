@@ -9,3 +9,6 @@
 /home/alex/workspaceC/webserver-ng/build/util/CMakeFiles/rebuild_cache.dir
 /home/alex/workspaceC/webserver-ng/build/util/CMakeFiles/edit_cache.dir
 /home/alex/workspaceC/webserver-ng/build/util/CMakeFiles/util_lib.dir
+/home/alex/workspaceC/webserver-ng/build/pool/CMakeFiles/rebuild_cache.dir
+/home/alex/workspaceC/webserver-ng/build/pool/CMakeFiles/edit_cache.dir
+/home/alex/workspaceC/webserver-ng/build/pool/CMakeFiles/threadpool_lib.dir
