@@ -1,0 +1,11 @@
+/home/alex/workspaceC/webserver-ng/build/CMakeFiles/rebuild_cache.dir
+/home/alex/workspaceC/webserver-ng/build/CMakeFiles/edit_cache.dir
+/home/alex/workspaceC/webserver-ng/build/test/CMakeFiles/rebuild_cache.dir
+/home/alex/workspaceC/webserver-ng/build/test/CMakeFiles/edit_cache.dir
+/home/alex/workspaceC/webserver-ng/build/test/CMakeFiles/test.dir
+/home/alex/workspaceC/webserver-ng/build/log/CMakeFiles/rebuild_cache.dir
+/home/alex/workspaceC/webserver-ng/build/log/CMakeFiles/edit_cache.dir
+/home/alex/workspaceC/webserver-ng/build/log/CMakeFiles/log_lib.dir
+/home/alex/workspaceC/webserver-ng/build/util/CMakeFiles/rebuild_cache.dir
+/home/alex/workspaceC/webserver-ng/build/util/CMakeFiles/edit_cache.dir
+/home/alex/workspaceC/webserver-ng/build/util/CMakeFiles/util_lib.dir
