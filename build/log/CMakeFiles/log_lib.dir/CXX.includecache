@@ -56,34 +56,6 @@ memory
 ctime
 -
 
-../include/LogStream.h
-string.h
--
-string
--
-noncopyable.h
-../include/noncopyable.h
-FixedBuffer.h
-../include/FixedBuffer.h
-
-../include/Logger.h
-pthread.h
--
-stdio.h
--
-string.h
--
-string
--
-errno.h
--
-LogStream.h
-../include/LogStream.h
-functional
--
-Timestamp.h
-../include/Timestamp.h
-
 ../include/Thread.h
 functional
 -
@@ -102,14 +74,6 @@ CurrentThread.h
 noncopyable.h
 ../include/noncopyable.h
 
-../include/Timestamp.h
-iostream
--
-string
--
-sys/time.h
--
-
 ../include/noncopyable.h
 
 /home/alex/workspaceC/webserver-ng/log/AsyncLogging.cpp
@@ -117,20 +81,4 @@ AsyncLogging.h
 /home/alex/workspaceC/webserver-ng/log/AsyncLogging.h
 stdio.h
 -
-
-/home/alex/workspaceC/webserver-ng/log/LogFile.cpp
-LogFile.h
-/home/alex/workspaceC/webserver-ng/log/LogFile.h
-
-/home/alex/workspaceC/webserver-ng/log/LogStream.cpp
-LogStream.h
-/home/alex/workspaceC/webserver-ng/log/LogStream.h
-algorithm
--
-
-/home/alex/workspaceC/webserver-ng/log/Logger.cpp
-Logger.h
-/home/alex/workspaceC/webserver-ng/log/Logger.h
-CurrentThread.h
-/home/alex/workspaceC/webserver-ng/log/CurrentThread.h
 

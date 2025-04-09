@@ -1,0 +1,136 @@
+2025/04/08 16:49:304956 DEBUG EventLoop createdtruein thread110972 - EventLoop.cpp:54
+2025/04/08 16:49:305032 INFO  func =>fd5events=3index=-1 - EPollPoller.cpp:68
+2025/04/08 16:49:308271 DEBUG EventLoop createdtruein thread110974 - EventLoop.cpp:54
+2025/04/08 16:49:308301 INFO  func =>fd8events=3index=-1 - EPollPoller.cpp:68
+2025/04/08 16:49:308335 INFO  EventLoop start looping - EventLoop.cpp:84
+2025/04/08 16:49:308344 INFO  fd total count:1 - EPollPoller.cpp:32
+2025/04/08 16:49:308652 DEBUG EventLoop createdtruein thread110975 - EventLoop.cpp:54
+2025/04/08 16:49:308670 INFO  func =>fd10events=3index=-1 - EPollPoller.cpp:68
+2025/04/08 16:49:308706 INFO  EventLoop start looping - EventLoop.cpp:84
+2025/04/08 16:49:308717 INFO  fd total count:1 - EPollPoller.cpp:32
+2025/04/08 16:49:308878 DEBUG EventLoop createdtruein thread110976 - EventLoop.cpp:54
+2025/04/08 16:49:308890 INFO  func =>fd12events=3index=-1 - EPollPoller.cpp:68
+2025/04/08 16:49:308915 INFO  EventLoop start looping - EventLoop.cpp:84
+2025/04/08 16:49:308922 INFO  fd total count:1 - EPollPoller.cpp:32
+2025/04/08 16:49:308953 INFO  func =>fd6events=3index=-1 - EPollPoller.cpp:68
+2025/04/08 16:49:309010 INFO  EventLoop start looping - EventLoop.cpp:84
+2025/04/08 16:49:309017 INFO  fd total count:2 - EPollPoller.cpp:32
+2025/04/08 16:49:317376 DEBUG EPollPoller11 timeout! - EPollPoller.cpp:50
+2025/04/08 16:49:317484 INFO  fd total count:1 - EPollPoller.cpp:32
+2025/04/08 16:49:318400 DEBUG EPollPoller7 timeout! - EPollPoller.cpp:50
+2025/04/08 16:49:318419 INFO  fd total count:1 - EPollPoller.cpp:32
+2025/04/08 16:49:318755 DEBUG EPollPoller9 timeout! - EPollPoller.cpp:50
+2025/04/08 16:49:318767 INFO  fd total count:1 - EPollPoller.cpp:32
+2025/04/08 16:49:319047 DEBUG EPollPoller3 timeout! - EPollPoller.cpp:50
+2025/04/08 16:49:319058 INFO  fd total count:2 - EPollPoller.cpp:32
+2025/04/08 16:49:071422 INFO  events happend1 - EPollPoller.cpp:41
+2025/04/08 16:49:071480 INFO  channel handleEvent revents:1 - Channel.cpp:78
+2025/04/08 16:49:071584 DEBUG Get loop 0 for key 127.0.0.1 - EventLoopThreadPool.cpp:49
+2025/04/08 16:49:071604 INFO  TcpServer::newConnection [EchoServer]- new connection [EchoServer-127.0.0.1:8080#1]from %s127.0.0.1:47141 - TcpServer.cpp:75
+2025/04/08 16:49:071677 INFO  TcpConnection::ctor:[EchoServer-127.0.0.1:8080#1]at fd=13 - TcpConnection.cpp:52
+2025/04/08 16:49:071837 INFO  fd total count:2 - EPollPoller.cpp:32
+2025/04/08 16:49:071857 INFO  events happend1 - EPollPoller.cpp:41
+2025/04/08 16:49:071875 INFO  channel handleEvent revents:1 - Channel.cpp:78
+2025/04/08 16:49:071920 INFO  func =>fd13events=3index=-1 - EPollPoller.cpp:68
+2025/04/08 16:49:071933 INFO  Connection UP :127.0.0.1:47141 - test.cpp:38
+2025/04/08 16:49:071944 INFO  fd total count:2 - EPollPoller.cpp:32
+2025/04/08 16:49:327588 DEBUG EPollPoller11 timeout! - EPollPoller.cpp:50
+2025/04/08 16:49:327633 INFO  fd total count:1 - EPollPoller.cpp:32
+2025/04/08 16:49:328843 DEBUG EPollPoller9 timeout! - EPollPoller.cpp:50
+2025/04/08 16:49:328867 INFO  fd total count:1 - EPollPoller.cpp:32
+2025/04/08 16:49:736012 INFO  events happend1 - EPollPoller.cpp:41
+2025/04/08 16:49:736071 INFO  channel handleEvent revents:1 - Channel.cpp:78
+2025/04/08 16:49:736171 INFO  fd total count:2 - EPollPoller.cpp:32
+2025/04/08 16:49:026957 INFO  events happend1 - EPollPoller.cpp:41
+2025/04/08 16:49:026985 INFO  channel handleEvent revents:1 - Channel.cpp:78
+2025/04/08 16:49:027029 INFO  fd total count:2 - EPollPoller.cpp:32
+2025/04/08 16:49:081940 DEBUG EPollPoller3 timeout! - EPollPoller.cpp:50
+2025/04/08 16:49:081988 INFO  fd total count:2 - EPollPoller.cpp:32
+2025/04/08 16:49:333858 DEBUG EPollPoller9 timeout! - EPollPoller.cpp:50
+2025/04/08 16:49:333945 INFO  fd total count:1 - EPollPoller.cpp:32
+2025/04/08 16:49:337735 DEBUG EPollPoller11 timeout! - EPollPoller.cpp:50
+2025/04/08 16:49:337751 INFO  fd total count:1 - EPollPoller.cpp:32
+2025/04/08 16:49:037104 DEBUG EPollPoller7 timeout! - EPollPoller.cpp:50
+2025/04/08 16:49:037174 INFO  fd total count:2 - EPollPoller.cpp:32
+2025/04/08 16:49:092108 DEBUG EPollPoller3 timeout! - EPollPoller.cpp:50
+2025/04/08 16:49:092155 INFO  fd total count:2 - EPollPoller.cpp:32
+2025/04/08 16:49:344019 DEBUG EPollPoller9 timeout! - EPollPoller.cpp:50
+2025/04/08 16:49:344065 INFO  fd total count:1 - EPollPoller.cpp:32
+2025/04/08 16:49:347824 DEBUG EPollPoller11 timeout! - EPollPoller.cpp:50
+2025/04/08 16:49:347844 INFO  fd total count:1 - EPollPoller.cpp:32
+2025/04/08 16:50:047246 DEBUG EPollPoller7 timeout! - EPollPoller.cpp:50
+2025/04/08 16:50:047287 INFO  fd total count:2 - EPollPoller.cpp:32
+2025/04/08 16:50:102245 DEBUG EPollPoller3 timeout! - EPollPoller.cpp:50
+2025/04/08 16:50:102291 INFO  fd total count:2 - EPollPoller.cpp:32
+2025/04/08 16:50:354229 DEBUG EPollPoller9 timeout! - EPollPoller.cpp:50
+2025/04/08 16:50:354306 INFO  fd total count:1 - EPollPoller.cpp:32
+2025/04/08 16:50:357926 DEBUG EPollPoller11 timeout! - EPollPoller.cpp:50
+2025/04/08 16:50:357944 INFO  fd total count:1 - EPollPoller.cpp:32
+2025/04/08 16:50:057338 DEBUG EPollPoller7 timeout! - EPollPoller.cpp:50
+2025/04/08 16:50:057382 INFO  fd total count:2 - EPollPoller.cpp:32
+2025/04/08 16:50:112365 DEBUG EPollPoller3 timeout! - EPollPoller.cpp:50
+2025/04/08 16:50:112441 INFO  fd total count:2 - EPollPoller.cpp:32
+2025/04/08 16:50:364386 DEBUG EPollPoller9 timeout! - EPollPoller.cpp:50
+2025/04/08 16:50:364438 INFO  fd total count:1 - EPollPoller.cpp:32
+2025/04/08 16:50:368021 DEBUG EPollPoller11 timeout! - EPollPoller.cpp:50
+2025/04/08 16:50:368039 INFO  fd total count:1 - EPollPoller.cpp:32
+2025/04/08 16:50:067449 DEBUG EPollPoller7 timeout! - EPollPoller.cpp:50
+2025/04/08 16:50:067502 INFO  fd total count:2 - EPollPoller.cpp:32
+2025/04/08 16:50:344624 INFO  events happend1 - EPollPoller.cpp:41
+2025/04/08 16:50:344655 INFO  channel handleEvent revents:1 - Channel.cpp:78
+2025/04/08 16:50:344709 DEBUG Get loop 0 for key 127.0.0.1 - EventLoopThreadPool.cpp:49
+2025/04/08 16:50:344716 INFO  TcpServer::newConnection [EchoServer]- new connection [EchoServer-127.0.0.1:8080#2]from %s127.0.0.1:48275 - TcpServer.cpp:75
+2025/04/08 16:50:344737 INFO  TcpConnection::ctor:[EchoServer-127.0.0.1:8080#2]at fd=14 - TcpConnection.cpp:52
+2025/04/08 16:50:344798 INFO  fd total count:2 - EPollPoller.cpp:32
+2025/04/08 16:50:344817 INFO  events happend1 - EPollPoller.cpp:41
+2025/04/08 16:50:344832 INFO  channel handleEvent revents:1 - Channel.cpp:78
+2025/04/08 16:50:344844 INFO  func =>fd14events=3index=-1 - EPollPoller.cpp:68
+2025/04/08 16:50:344856 INFO  Connection UP :127.0.0.1:48275 - test.cpp:38
+2025/04/08 16:50:344862 INFO  fd total count:3 - EPollPoller.cpp:32
+2025/04/08 16:50:374835 DEBUG EPollPoller9 timeout! - EPollPoller.cpp:50
+2025/04/08 16:50:374881 INFO  fd total count:1 - EPollPoller.cpp:32
+2025/04/08 16:50:378114 DEBUG EPollPoller11 timeout! - EPollPoller.cpp:50
+2025/04/08 16:50:378163 INFO  fd total count:1 - EPollPoller.cpp:32
+2025/04/08 16:50:219998 INFO  events happend1 - EPollPoller.cpp:41
+2025/04/08 16:50:220043 INFO  channel handleEvent revents:1 - Channel.cpp:78
+2025/04/08 16:50:220117 INFO  fd total count:3 - EPollPoller.cpp:32
+2025/04/08 16:50:077033 INFO  events happend1 - EPollPoller.cpp:41
+2025/04/08 16:50:077071 INFO  channel handleEvent revents:1 - Channel.cpp:78
+2025/04/08 16:50:077117 INFO  fd total count:3 - EPollPoller.cpp:32
+2025/04/08 16:50:939205 INFO  events happend1 - EPollPoller.cpp:41
+2025/04/08 16:50:939258 INFO  channel handleEvent revents:1 - Channel.cpp:78
+2025/04/08 16:50:939313 INFO  fd total count:3 - EPollPoller.cpp:32
+2025/04/08 16:50:939909 INFO  events happend1 - EPollPoller.cpp:41
+2025/04/08 16:50:939946 INFO  channel handleEvent revents:1 - Channel.cpp:78
+2025/04/08 16:50:939991 INFO  fd total count:3 - EPollPoller.cpp:32
+2025/04/08 16:50:354856 DEBUG EPollPoller3 timeout! - EPollPoller.cpp:50
+2025/04/08 16:50:354889 INFO  fd total count:2 - EPollPoller.cpp:32
+2025/04/08 16:50:385369 DEBUG EPollPoller9 timeout! - EPollPoller.cpp:50
+2025/04/08 16:50:385491 INFO  fd total count:1 - EPollPoller.cpp:32
+2025/04/08 16:50:388237 DEBUG EPollPoller11 timeout! - EPollPoller.cpp:50
+2025/04/08 16:50:388253 INFO  fd total count:1 - EPollPoller.cpp:32
+2025/04/08 16:50:943770 DEBUG EPollPoller7 timeout! - EPollPoller.cpp:50
+2025/04/08 16:50:943829 INFO  fd total count:3 - EPollPoller.cpp:32
+2025/04/08 16:50:296740 INFO  events happend1 - EPollPoller.cpp:41
+2025/04/08 16:50:296785 INFO  channel handleEvent revents:1 - Channel.cpp:78
+2025/04/08 16:50:296812 INFO  TcpConnection::handleClose fd=14state=2 - TcpConnection.cpp:241
+2025/04/08 16:50:296822 INFO  func =>fd14events=0index=1 - EPollPoller.cpp:68
+2025/04/08 16:50:296835 INFO  Connection DOWN :127.0.0.1:48275 - test.cpp:42
+2025/04/08 16:50:296937 INFO  fd total count:3 - EPollPoller.cpp:32
+2025/04/08 16:50:296941 INFO  events happend1 - EPollPoller.cpp:41
+2025/04/08 16:50:296960 INFO  channel handleEvent revents:1 - Channel.cpp:78
+2025/04/08 16:50:296975 INFO  TcpServer::removeConnectionInLoop [EchoServer] - connection %sEchoServer-127.0.0.1:8080#2 - TcpServer.cpp:114
+2025/04/08 16:50:297028 INFO  fd total count:2 - EPollPoller.cpp:32
+2025/04/08 16:50:297039 INFO  events happend1 - EPollPoller.cpp:41
+2025/04/08 16:50:297051 INFO  channel handleEvent revents:1 - Channel.cpp:78
+2025/04/08 16:50:297077 INFO  removeChannel fd=14 - EPollPoller.cpp:107
+2025/04/08 16:50:297082 INFO  TcpConnection::dtor[EchoServer-127.0.0.1:8080#2]at fd=14state=0 - TcpConnection.cpp:58
+2025/04/08 16:50:297134 INFO  fd total count:2 - EPollPoller.cpp:32
+2025/04/08 16:50:395909 DEBUG EPollPoller9 timeout! - EPollPoller.cpp:50
+2025/04/08 16:50:395956 INFO  fd total count:1 - EPollPoller.cpp:32
+2025/04/08 16:50:398664 DEBUG EPollPoller11 timeout! - EPollPoller.cpp:50
+2025/04/08 16:50:398755 INFO  fd total count:1 - EPollPoller.cpp:32
+2025/04/08 16:50:307102 DEBUG EPollPoller3 timeout! - EPollPoller.cpp:50
+2025/04/08 16:50:307144 INFO  fd total count:2 - EPollPoller.cpp:32
+2025/04/08 16:50:307209 DEBUG EPollPoller7 timeout! - EPollPoller.cpp:50
+2025/04/08 16:50:307225 INFO  fd total count:2 - EPollPoller.cpp:32

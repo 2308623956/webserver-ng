@@ -79,6 +79,8 @@ test_EXTERNAL_OBJECTS =
 
 ../bin/test: test/CMakeFiles/test.dir/test.cpp.o
 ../bin/test: test/CMakeFiles/test.dir/build.make
+../bin/test: ../lib/libsrc_lib.so
+../bin/test: ../lib/libreactor_lib.so
 ../bin/test: ../lib/libutil_lib.so
 ../bin/test: ../lib/liblog_lib.so
 ../bin/test: ../lib/libthreadpool_lib.so

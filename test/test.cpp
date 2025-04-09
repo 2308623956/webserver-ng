@@ -3,19 +3,57 @@
 #include <sstream>
 #include "AsyncLogging.h"
 #include <Logger.h>
+#include <TcpServer.h>
 // 日志文件滚动大小为1MB (1*1024*1024字节)
 static const off_t kRollSize = 1 * 1024 * 1024;
 
-//线程函数 每个线程做的事
-void* threadFunc(void* arg) {
-    int threadId = *(static_cast<int*>(arg));
-    for (int i = 0; i < 100; ++i) {
-        LOG_INFO << "Thread " << threadId << " - Count: " << i;
-        // 模拟业务处理
-        usleep(1000); // 1ms延迟
+class EchoServer
+{
+public:
+    EchoServer(EventLoop *loop, const InetAddress &addr, const std::string &name)
+        : server_(loop, addr, name)
+        , loop_(loop)
+    {
+        // 注册回调函数
+        server_.setConnectionCallback(
+            std::bind(&EchoServer::onConnection, this, std::placeholders::_1));
+        
+        server_.setMessageCallback(
+            std::bind(&EchoServer::onMessage, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
+
+        // 设置合适的subloop线程数量
+        server_.setThreadNum(3);
     }
-    return nullptr;
-}
+    void start()
+    {
+        server_.start();
+    }
+
+private:
+    // 连接建立或断开的回调函数
+    void onConnection(const TcpConnectionPtr &conn)   
+    {
+        if (conn->connected())
+        {
+            LOG_INFO<<"Connection UP :"<<conn->peerAddress().toIpPort().c_str();
+        }
+        else
+        {
+            LOG_INFO<<"Connection DOWN :"<<conn->peerAddress().toIpPort().c_str();
+        }
+    }
+    
+    // 可读写事件回调
+    void onMessage(const TcpConnectionPtr &conn, Buffer *buf, Timestamp time)
+    {
+        std::string msg = buf->retrieveAllAsString();
+        conn->send(msg);
+        // conn->shutdown();   // 关闭写端 底层响应EPOLLHUP => 执行closeCallback_
+    }
+    TcpServer server_;
+    EventLoop *loop_;
+
+};
 
 //所有线程用的是同一个 AsyncLogging
 AsyncLogging *g_asyncLog = NULL;
@@ -49,29 +87,17 @@ int main(int argc,char *argv[])
     Logger::setOutput(asyncLog); // 为Logger设置输出回调, 重新配接输出位置
     log.start();                 // 开启日志后端线程
 
-    // 创建10个线程
-    const int NUM_THREADS = 10;
-    std::vector<pthread_t> threads(NUM_THREADS);
-    int threadIds[NUM_THREADS];
-
-    // 启动线程
-    for (int i = 0; i < NUM_THREADS; ++i) {
-        threadIds[i] = i;
-        if (pthread_create(&threads[i], nullptr, threadFunc, &threadIds[i]) != 0) {
-            std::cerr << "Failed to create thread " << i << std::endl;
-            return 1;
-        }
-    }
-
-    // 等待所有线程完成
-    for (auto& tid : threads) {
-        pthread_join(tid, nullptr);
-    }
-
-    // 保证日志线程处理剩余数据
-    sleep(2);
-
-    // 停止日志系统
+   //第三步启动底层网络模块
+    //第三步启动底层网络模块
+    EventLoop loop;
+    InetAddress addr(8080);
+    EchoServer server(&loop, addr, "EchoServer");
+    server.start();
+    // 主loop开始事件循环  epoll_wait阻塞 等待就绪事件(主loop只注册了监听套接字的fd，所以只会处理新连接事件)
+    std::cout << "================================================Start Web Server================================================" << std::endl;
+    loop.loop();
+    std::cout << "================================================Stop Web Server=================================================" << std::endl;
+    //结束日志打野
     log.stop();
     return 0;
 }

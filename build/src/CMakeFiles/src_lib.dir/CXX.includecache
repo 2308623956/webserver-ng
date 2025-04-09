@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Buffer.h
+vector
+-
+string
+-
+algorithm
+-
+stddef.h
+-
+
+/home/alex/workspaceC/webserver-ng/src/Buffer.cpp
+errno.h
+-
+sys/uio.h
+-
+unistd.h
+-
+Buffer.h
+-
+

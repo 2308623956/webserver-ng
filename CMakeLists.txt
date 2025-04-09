@@ -17,7 +17,9 @@ set(LIBS
 )
 
 add_subdirectory(test)
+add_subdirectory(src)
 add_subdirectory(log)
 add_subdirectory(util)
+add_subdirectory(reactor)
 add_subdirectory(pool)
 

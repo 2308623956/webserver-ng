@@ -1,0 +1,112 @@
+[
+{
+  "directory": "/home/alex/workspaceC/webserver-ng/build/test",
+  "command": "/usr/bin/c++   -I/home/alex/workspaceC/webserver-ng/include  -g   -std=gnu++11 -o CMakeFiles/test.dir/test.cpp.o -c /home/alex/workspaceC/webserver-ng/test/test.cpp",
+  "file": "/home/alex/workspaceC/webserver-ng/test/test.cpp"
+},
+{
+  "directory": "/home/alex/workspaceC/webserver-ng/build/src",
+  "command": "/usr/bin/c++  -Dsrc_lib_EXPORTS -I/home/alex/workspaceC/webserver-ng/include  -g -fPIC   -std=gnu++11 -o CMakeFiles/src_lib.dir/Acceptor.cpp.o -c /home/alex/workspaceC/webserver-ng/src/Acceptor.cpp",
+  "file": "/home/alex/workspaceC/webserver-ng/src/Acceptor.cpp"
+},
+{
+  "directory": "/home/alex/workspaceC/webserver-ng/build/src",
+  "command": "/usr/bin/c++  -Dsrc_lib_EXPORTS -I/home/alex/workspaceC/webserver-ng/include  -g -fPIC   -std=gnu++11 -o CMakeFiles/src_lib.dir/Buffer.cpp.o -c /home/alex/workspaceC/webserver-ng/src/Buffer.cpp",
+  "file": "/home/alex/workspaceC/webserver-ng/src/Buffer.cpp"
+},
+{
+  "directory": "/home/alex/workspaceC/webserver-ng/build/src",
+  "command": "/usr/bin/c++  -Dsrc_lib_EXPORTS -I/home/alex/workspaceC/webserver-ng/include  -g -fPIC   -std=gnu++11 -o CMakeFiles/src_lib.dir/InetAddress.cpp.o -c /home/alex/workspaceC/webserver-ng/src/InetAddress.cpp",
+  "file": "/home/alex/workspaceC/webserver-ng/src/InetAddress.cpp"
+},
+{
+  "directory": "/home/alex/workspaceC/webserver-ng/build/src",
+  "command": "/usr/bin/c++  -Dsrc_lib_EXPORTS -I/home/alex/workspaceC/webserver-ng/include  -g -fPIC   -std=gnu++11 -o CMakeFiles/src_lib.dir/Socket.cpp.o -c /home/alex/workspaceC/webserver-ng/src/Socket.cpp",
+  "file": "/home/alex/workspaceC/webserver-ng/src/Socket.cpp"
+},
+{
+  "directory": "/home/alex/workspaceC/webserver-ng/build/src",
+  "command": "/usr/bin/c++  -Dsrc_lib_EXPORTS -I/home/alex/workspaceC/webserver-ng/include  -g -fPIC   -std=gnu++11 -o CMakeFiles/src_lib.dir/TcpConnection.cpp.o -c /home/alex/workspaceC/webserver-ng/src/TcpConnection.cpp",
+  "file": "/home/alex/workspaceC/webserver-ng/src/TcpConnection.cpp"
+},
+{
+  "directory": "/home/alex/workspaceC/webserver-ng/build/src",
+  "command": "/usr/bin/c++  -Dsrc_lib_EXPORTS -I/home/alex/workspaceC/webserver-ng/include  -g -fPIC   -std=gnu++11 -o CMakeFiles/src_lib.dir/TcpServer.cpp.o -c /home/alex/workspaceC/webserver-ng/src/TcpServer.cpp",
+  "file": "/home/alex/workspaceC/webserver-ng/src/TcpServer.cpp"
+},
+{
+  "directory": "/home/alex/workspaceC/webserver-ng/build/log",
+  "command": "/usr/bin/c++  -Dlog_lib_EXPORTS -I/home/alex/workspaceC/webserver-ng/include  -g -fPIC   -std=gnu++11 -o CMakeFiles/log_lib.dir/AsyncLogging.cpp.o -c /home/alex/workspaceC/webserver-ng/log/AsyncLogging.cpp",
+  "file": "/home/alex/workspaceC/webserver-ng/log/AsyncLogging.cpp"
+},
+{
+  "directory": "/home/alex/workspaceC/webserver-ng/build/log",
+  "command": "/usr/bin/c++  -Dlog_lib_EXPORTS -I/home/alex/workspaceC/webserver-ng/include  -g -fPIC   -std=gnu++11 -o CMakeFiles/log_lib.dir/LogFile.cpp.o -c /home/alex/workspaceC/webserver-ng/log/LogFile.cpp",
+  "file": "/home/alex/workspaceC/webserver-ng/log/LogFile.cpp"
+},
+{
+  "directory": "/home/alex/workspaceC/webserver-ng/build/log",
+  "command": "/usr/bin/c++  -Dlog_lib_EXPORTS -I/home/alex/workspaceC/webserver-ng/include  -g -fPIC   -std=gnu++11 -o CMakeFiles/log_lib.dir/LogStream.cpp.o -c /home/alex/workspaceC/webserver-ng/log/LogStream.cpp",
+  "file": "/home/alex/workspaceC/webserver-ng/log/LogStream.cpp"
+},
+{
+  "directory": "/home/alex/workspaceC/webserver-ng/build/log",
+  "command": "/usr/bin/c++  -Dlog_lib_EXPORTS -I/home/alex/workspaceC/webserver-ng/include  -g -fPIC   -std=gnu++11 -o CMakeFiles/log_lib.dir/Logger.cpp.o -c /home/alex/workspaceC/webserver-ng/log/Logger.cpp",
+  "file": "/home/alex/workspaceC/webserver-ng/log/Logger.cpp"
+},
+{
+  "directory": "/home/alex/workspaceC/webserver-ng/build/util",
+  "command": "/usr/bin/c++  -Dutil_lib_EXPORTS -I/home/alex/workspaceC/webserver-ng/include  -g -fPIC   -std=gnu++11 -o CMakeFiles/util_lib.dir/CurrentThread.cpp.o -c /home/alex/workspaceC/webserver-ng/util/CurrentThread.cpp",
+  "file": "/home/alex/workspaceC/webserver-ng/util/CurrentThread.cpp"
+},
+{
+  "directory": "/home/alex/workspaceC/webserver-ng/build/util",
+  "command": "/usr/bin/c++  -Dutil_lib_EXPORTS -I/home/alex/workspaceC/webserver-ng/include  -g -fPIC   -std=gnu++11 -o CMakeFiles/util_lib.dir/FileUtil.cpp.o -c /home/alex/workspaceC/webserver-ng/util/FileUtil.cpp",
+  "file": "/home/alex/workspaceC/webserver-ng/util/FileUtil.cpp"
+},
+{
+  "directory": "/home/alex/workspaceC/webserver-ng/build/util",
+  "command": "/usr/bin/c++  -Dutil_lib_EXPORTS -I/home/alex/workspaceC/webserver-ng/include  -g -fPIC   -std=gnu++11 -o CMakeFiles/util_lib.dir/Thread.cpp.o -c /home/alex/workspaceC/webserver-ng/util/Thread.cpp",
+  "file": "/home/alex/workspaceC/webserver-ng/util/Thread.cpp"
+},
+{
+  "directory": "/home/alex/workspaceC/webserver-ng/build/util",
+  "command": "/usr/bin/c++  -Dutil_lib_EXPORTS -I/home/alex/workspaceC/webserver-ng/include  -g -fPIC   -std=gnu++11 -o CMakeFiles/util_lib.dir/Timestamp.cpp.o -c /home/alex/workspaceC/webserver-ng/util/Timestamp.cpp",
+  "file": "/home/alex/workspaceC/webserver-ng/util/Timestamp.cpp"
+},
+{
+  "directory": "/home/alex/workspaceC/webserver-ng/build/reactor",
+  "command": "/usr/bin/c++  -Dreactor_lib_EXPORTS -I/home/alex/workspaceC/webserver-ng/include  -g -fPIC   -std=gnu++11 -o CMakeFiles/reactor_lib.dir/Channel.cpp.o -c /home/alex/workspaceC/webserver-ng/reactor/Channel.cpp",
+  "file": "/home/alex/workspaceC/webserver-ng/reactor/Channel.cpp"
+},
+{
+  "directory": "/home/alex/workspaceC/webserver-ng/build/reactor",
+  "command": "/usr/bin/c++  -Dreactor_lib_EXPORTS -I/home/alex/workspaceC/webserver-ng/include  -g -fPIC   -std=gnu++11 -o CMakeFiles/reactor_lib.dir/DefaultPoller.cpp.o -c /home/alex/workspaceC/webserver-ng/reactor/DefaultPoller.cpp",
+  "file": "/home/alex/workspaceC/webserver-ng/reactor/DefaultPoller.cpp"
+},
+{
+  "directory": "/home/alex/workspaceC/webserver-ng/build/reactor",
+  "command": "/usr/bin/c++  -Dreactor_lib_EXPORTS -I/home/alex/workspaceC/webserver-ng/include  -g -fPIC   -std=gnu++11 -o CMakeFiles/reactor_lib.dir/EPollPoller.cpp.o -c /home/alex/workspaceC/webserver-ng/reactor/EPollPoller.cpp",
+  "file": "/home/alex/workspaceC/webserver-ng/reactor/EPollPoller.cpp"
+},
+{
+  "directory": "/home/alex/workspaceC/webserver-ng/build/reactor",
+  "command": "/usr/bin/c++  -Dreactor_lib_EXPORTS -I/home/alex/workspaceC/webserver-ng/include  -g -fPIC   -std=gnu++11 -o CMakeFiles/reactor_lib.dir/EventLoop.cpp.o -c /home/alex/workspaceC/webserver-ng/reactor/EventLoop.cpp",
+  "file": "/home/alex/workspaceC/webserver-ng/reactor/EventLoop.cpp"
+},
+{
+  "directory": "/home/alex/workspaceC/webserver-ng/build/reactor",
+  "command": "/usr/bin/c++  -Dreactor_lib_EXPORTS -I/home/alex/workspaceC/webserver-ng/include  -g -fPIC   -std=gnu++11 -o CMakeFiles/reactor_lib.dir/Poller.cpp.o -c /home/alex/workspaceC/webserver-ng/reactor/Poller.cpp",
+  "file": "/home/alex/workspaceC/webserver-ng/reactor/Poller.cpp"
+},
+{
+  "directory": "/home/alex/workspaceC/webserver-ng/build/pool",
+  "command": "/usr/bin/c++  -Dthreadpool_lib_EXPORTS -I/home/alex/workspaceC/webserver-ng/include  -g -fPIC   -std=gnu++11 -o CMakeFiles/threadpool_lib.dir/EventLoopThread.cpp.o -c /home/alex/workspaceC/webserver-ng/pool/EventLoopThread.cpp",
+  "file": "/home/alex/workspaceC/webserver-ng/pool/EventLoopThread.cpp"
+},
+{
+  "directory": "/home/alex/workspaceC/webserver-ng/build/pool",
+  "command": "/usr/bin/c++  -Dthreadpool_lib_EXPORTS -I/home/alex/workspaceC/webserver-ng/include  -g -fPIC   -std=gnu++11 -o CMakeFiles/threadpool_lib.dir/EventLoopThreadPool.cpp.o -c /home/alex/workspaceC/webserver-ng/pool/EventLoopThreadPool.cpp",
+  "file": "/home/alex/workspaceC/webserver-ng/pool/EventLoopThreadPool.cpp"
+}
+]

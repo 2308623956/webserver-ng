@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/test.dir/test.cpp.o  -o ../../bin/test  -Wl,-rpath,/home/alex/workspaceC/webserver-ng/lib ../../lib/libutil_lib.so ../../lib/liblog_lib.so ../../lib/libthreadpool_lib.so -lpthread 
+/usr/bin/c++  -g   CMakeFiles/test.dir/test.cpp.o  -o ../../bin/test  -Wl,-rpath,/home/alex/workspaceC/webserver-ng/lib ../../lib/libsrc_lib.so ../../lib/libreactor_lib.so ../../lib/libutil_lib.so ../../lib/liblog_lib.so ../../lib/libthreadpool_lib.so -lpthread 

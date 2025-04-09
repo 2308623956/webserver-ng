@@ -54,24 +54,30 @@ CMAKE_BINARY_DIR = /home/alex/workspaceC/webserver-ng/build
 
 # The main recursive "all" target.
 all: test/all
+all: src/all
 all: log/all
 all: util/all
+all: reactor/all
 all: pool/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: test/preinstall
+preinstall: src/preinstall
 preinstall: log/preinstall
 preinstall: util/preinstall
+preinstall: reactor/preinstall
 preinstall: pool/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: test/clean
+clean: src/clean
 clean: log/clean
 clean: util/clean
+clean: reactor/clean
 clean: pool/clean
 
 .PHONY : clean
@@ -113,6 +119,42 @@ pool/clean: pool/CMakeFiles/threadpool_lib.dir/clean
 .PHONY : pool/clean
 
 #=============================================================================
+# Directory level rules for directory reactor
+
+# Recursive "all" directory target.
+reactor/all: reactor/CMakeFiles/reactor_lib.dir/all
+
+.PHONY : reactor/all
+
+# Recursive "preinstall" directory target.
+reactor/preinstall:
+
+.PHONY : reactor/preinstall
+
+# Recursive "clean" directory target.
+reactor/clean: reactor/CMakeFiles/reactor_lib.dir/clean
+
+.PHONY : reactor/clean
+
+#=============================================================================
+# Directory level rules for directory src
+
+# Recursive "all" directory target.
+src/all: src/CMakeFiles/src_lib.dir/all
+
+.PHONY : src/all
+
+# Recursive "preinstall" directory target.
+src/preinstall:
+
+.PHONY : src/preinstall
+
+# Recursive "clean" directory target.
+src/clean: src/CMakeFiles/src_lib.dir/clean
+
+.PHONY : src/clean
+
+#=============================================================================
 # Directory level rules for directory test
 
 # Recursive "all" directory target.
@@ -152,17 +194,19 @@ util/clean: util/CMakeFiles/util_lib.dir/clean
 # Target rules for target test/CMakeFiles/test.dir
 
 # All Build rule for target.
+test/CMakeFiles/test.dir/all: src/CMakeFiles/src_lib.dir/all
 test/CMakeFiles/test.dir/all: log/CMakeFiles/log_lib.dir/all
 test/CMakeFiles/test.dir/all: util/CMakeFiles/util_lib.dir/all
+test/CMakeFiles/test.dir/all: reactor/CMakeFiles/reactor_lib.dir/all
 test/CMakeFiles/test.dir/all: pool/CMakeFiles/threadpool_lib.dir/all
 	$(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/depend
 	$(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/workspaceC/webserver-ng/build/CMakeFiles --progress-num=6,7 "Built target test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/workspaceC/webserver-ng/build/CMakeFiles --progress-num=19,20 "Built target test"
 .PHONY : test/CMakeFiles/test.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/workspaceC/webserver-ng/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/workspaceC/webserver-ng/build/CMakeFiles 28
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/workspaceC/webserver-ng/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/test.dir/rule
@@ -176,6 +220,33 @@ test: test/CMakeFiles/test.dir/rule
 test/CMakeFiles/test.dir/clean:
 	$(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/clean
 .PHONY : test/CMakeFiles/test.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/src_lib.dir
+
+# All Build rule for target.
+src/CMakeFiles/src_lib.dir/all:
+	$(MAKE) -f src/CMakeFiles/src_lib.dir/build.make src/CMakeFiles/src_lib.dir/depend
+	$(MAKE) -f src/CMakeFiles/src_lib.dir/build.make src/CMakeFiles/src_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/workspaceC/webserver-ng/build/CMakeFiles --progress-num=12,13,14,15,16,17,18 "Built target src_lib"
+.PHONY : src/CMakeFiles/src_lib.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/src_lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/workspaceC/webserver-ng/build/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/src_lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/workspaceC/webserver-ng/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/src_lib.dir/rule
+
+# Convenience name for target.
+src_lib: src/CMakeFiles/src_lib.dir/rule
+
+.PHONY : src_lib
+
+# clean rule for target.
+src/CMakeFiles/src_lib.dir/clean:
+	$(MAKE) -f src/CMakeFiles/src_lib.dir/build.make src/CMakeFiles/src_lib.dir/clean
+.PHONY : src/CMakeFiles/src_lib.dir/clean
 
 #=============================================================================
 # Target rules for target log/CMakeFiles/log_lib.dir
@@ -211,7 +282,7 @@ log/CMakeFiles/log_lib.dir/clean:
 util/CMakeFiles/util_lib.dir/all:
 	$(MAKE) -f util/CMakeFiles/util_lib.dir/build.make util/CMakeFiles/util_lib.dir/depend
 	$(MAKE) -f util/CMakeFiles/util_lib.dir/build.make util/CMakeFiles/util_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/workspaceC/webserver-ng/build/CMakeFiles --progress-num=11,12,13,14,15 "Built target util_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/workspaceC/webserver-ng/build/CMakeFiles --progress-num=24,25,26,27,28 "Built target util_lib"
 .PHONY : util/CMakeFiles/util_lib.dir/all
 
 # Build rule for subdir invocation for target.
@@ -232,13 +303,40 @@ util/CMakeFiles/util_lib.dir/clean:
 .PHONY : util/CMakeFiles/util_lib.dir/clean
 
 #=============================================================================
+# Target rules for target reactor/CMakeFiles/reactor_lib.dir
+
+# All Build rule for target.
+reactor/CMakeFiles/reactor_lib.dir/all:
+	$(MAKE) -f reactor/CMakeFiles/reactor_lib.dir/build.make reactor/CMakeFiles/reactor_lib.dir/depend
+	$(MAKE) -f reactor/CMakeFiles/reactor_lib.dir/build.make reactor/CMakeFiles/reactor_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/workspaceC/webserver-ng/build/CMakeFiles --progress-num=6,7,8,9,10,11 "Built target reactor_lib"
+.PHONY : reactor/CMakeFiles/reactor_lib.dir/all
+
+# Build rule for subdir invocation for target.
+reactor/CMakeFiles/reactor_lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/workspaceC/webserver-ng/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 reactor/CMakeFiles/reactor_lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/workspaceC/webserver-ng/build/CMakeFiles 0
+.PHONY : reactor/CMakeFiles/reactor_lib.dir/rule
+
+# Convenience name for target.
+reactor_lib: reactor/CMakeFiles/reactor_lib.dir/rule
+
+.PHONY : reactor_lib
+
+# clean rule for target.
+reactor/CMakeFiles/reactor_lib.dir/clean:
+	$(MAKE) -f reactor/CMakeFiles/reactor_lib.dir/build.make reactor/CMakeFiles/reactor_lib.dir/clean
+.PHONY : reactor/CMakeFiles/reactor_lib.dir/clean
+
+#=============================================================================
 # Target rules for target pool/CMakeFiles/threadpool_lib.dir
 
 # All Build rule for target.
 pool/CMakeFiles/threadpool_lib.dir/all:
 	$(MAKE) -f pool/CMakeFiles/threadpool_lib.dir/build.make pool/CMakeFiles/threadpool_lib.dir/depend
 	$(MAKE) -f pool/CMakeFiles/threadpool_lib.dir/build.make pool/CMakeFiles/threadpool_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/workspaceC/webserver-ng/build/CMakeFiles --progress-num=8,9,10 "Built target threadpool_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/workspaceC/webserver-ng/build/CMakeFiles --progress-num=21,22,23 "Built target threadpool_lib"
 .PHONY : pool/CMakeFiles/threadpool_lib.dir/all
 
 # Build rule for subdir invocation for target.

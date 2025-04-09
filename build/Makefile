@@ -124,6 +124,19 @@ test/fast:
 .PHONY : test/fast
 
 #=============================================================================
+# Target rules for targets named src_lib
+
+# Build rule for target.
+src_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 src_lib
+.PHONY : src_lib
+
+# fast build rule for target.
+src_lib/fast:
+	$(MAKE) -f src/CMakeFiles/src_lib.dir/build.make src/CMakeFiles/src_lib.dir/build
+.PHONY : src_lib/fast
+
+#=============================================================================
 # Target rules for targets named log_lib
 
 # Build rule for target.
@@ -150,6 +163,19 @@ util_lib/fast:
 .PHONY : util_lib/fast
 
 #=============================================================================
+# Target rules for targets named reactor_lib
+
+# Build rule for target.
+reactor_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 reactor_lib
+.PHONY : reactor_lib
+
+# fast build rule for target.
+reactor_lib/fast:
+	$(MAKE) -f reactor/CMakeFiles/reactor_lib.dir/build.make reactor/CMakeFiles/reactor_lib.dir/build
+.PHONY : reactor_lib/fast
+
+#=============================================================================
 # Target rules for targets named threadpool_lib
 
 # Build rule for target.
@@ -171,8 +197,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... src_lib"
 	@echo "... log_lib"
 	@echo "... util_lib"
+	@echo "... reactor_lib"
 	@echo "... threadpool_lib"
 .PHONY : help
 
